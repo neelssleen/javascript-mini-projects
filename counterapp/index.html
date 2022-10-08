@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter APP</title>
+</head>
+
+<body>
+    <div id="display" class="display-block">0</div>
+    <div class="action-block">
+        <button class="btn plus" onclick="increaseCount()">+</button>
+        <button class="btn reset" onclick="resetCount()">Reset</button>
+        <button class="btn minus" onclick="decreaseCount()">-</button>
+        <button class="btn reset" onclick="setCount(100)">set 100</button>
+    </div>
+    <script type="text/javascript">
+        let displayElement = document.getElementById("display");
+
+        function getDisplayedCount() {
+            return displayElement.innerText;
+        }
+        function setDisplayedCount(number) {
+            displayElement.innerText = number;
+        }
+
+        function increaseCount() {
+            setDisplayedCount(parseInt(getDisplayedCount()) + 1);
+        }
+
+        function decreaseCount() {
+            setDisplayedCount(parseInt(getDisplayedCount()) - 1);
+        }
+
+        function resetCount() {
+            setDisplayedCount(0);
+        }
+
+        function setCount(n) {
+            setDisplayedCount(n);
+        }
+
+
+    </script>
+</body>
+
+</html>

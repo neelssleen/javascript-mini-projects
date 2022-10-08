@@ -1,0 +1,25 @@
+.btn{
+    width: 100px;
+    height: 50px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.btn.reset{
+    font-size: 24px;
+}
+
+.btn.plus, .btn.minus{
+    font-size: 32px;
+}
+
+.action-block{
+    text-align: center;
+}
+
+.display-block{
+    text-align: center;
+    font-size: 72px;
+    font-weight: 900;
+    padding-bottom: 40px;
+}
